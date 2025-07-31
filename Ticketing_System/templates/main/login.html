@@ -1,4 +1,9 @@
+{% load static %}
+<!DOCTYPE html>
+<link rel="stylesheet"  href="{% static 'login.css' %}">
 <h1>Login</h1>
+<div class ="body">
+</div>
 <form method="POST">
     {% csrf_token %}
     {{form.as_p}}

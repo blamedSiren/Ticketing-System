@@ -1,13 +1,14 @@
 {% load static %}
+<!DOCTYPE html>
 <link rel="stylesheet"  href="{% static 'style.css' %}">
-
+<divcl></div>
 {% block title %}
-    Register a new User
+    <h1>Register a new User</h1>
 {% endblock %}
 
 {% block content %}
     <h1></h1>
-    <form class="form-with-validation" action="/register/" method="POST">
+    <form action="/register/" method="POST">
         {% csrf_token %}
         {{form.as_p}}
         <button>Submit</button>
