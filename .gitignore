@@ -263,3 +263,7 @@ pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python,django*.pyc
 __pycache__/
+*.pyc
+__pycache__/
+*.pyc
+__pycache__/
