@@ -1,13 +1,6 @@
-*{
-    font-size:large;
-}
 body {
     background-image: linear-gradient(to right, purple, pink);
     color: white;
-}
-h1 {
-    font-size: 3em;
-
 }
 button {
     font-size: large;

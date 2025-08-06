@@ -1,3 +1,4 @@
+
 *{
     font-size:large;
 }
@@ -6,13 +7,17 @@ body {
     color: white;
 }
 h1 {
-    font-size: 3em;
-
+    font-size: 2em;
+    font-family: 'Poppins', serif;
 }
 button {
-    font-size: large;
+    font-size: larger;
     border-radius: 20em;
     color: white;
     background-color: teal;
     font-weight: bold;
+}
+li{
+    font-size:2em;
+    margin: 3em;
 }
