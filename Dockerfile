@@ -1,4 +1,7 @@
 FROM python:3.13  
+
+# Install PostgreSQL client
+RUN apt-get update && apt-get install -y postgresql-client
  
 # Create the app directory
 RUN mkdir /app
@@ -6,11 +9,11 @@ RUN mkdir /app
 # Set the working directory inside the container
 WORKDIR /app
  
-# Set environment variables 
+# Set environment variables UNECCESARY
 # Prevents Python from writing pyc files to disk
-ENV PYTHONDONTWRITEBYTECODE=1
+#ENV PYTHONDONTWRITEBYTECODE=1
 #Prevents Python from buffering stdout and stderr
-ENV PYTHONUNBUFFERED=1 
+#ENV PYTHONUNBUFFERED=1 
  
 # Upgrade pip
 RUN pip install --upgrade pip 
