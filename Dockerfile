@@ -9,12 +9,6 @@ RUN mkdir /app
 # Set the working directory inside the container
 WORKDIR /app
  
-# Set environment variables UNECCESARY
-# Prevents Python from writing pyc files to disk
-#ENV PYTHONDONTWRITEBYTECODE=1
-#Prevents Python from buffering stdout and stderr
-#ENV PYTHONUNBUFFERED=1 
- 
 # Upgrade pip
 RUN pip install --upgrade pip 
  
